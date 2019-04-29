@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vapid Example</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton|Work+Sans:400,800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/jonas.jpg" />
+      <h1>
+        <span>Our Shops</span>
+      </h1>
+      <p><a href="index.html">Home</a></p>
+    </header>
+    <section class="shops">
+      {{#section shops multiple=true}}
+      <section class="shop">
+        <h1>{{ title }}</h1>
+        {{body type=html}}
+      </section>
+      {{/section}}
+    </section>
+    <footer>
+      <p>&copy; 2019</p>
+    </footer>
+
+    <script src="/javascripts/site.js"></script>
+  </body>
+</html>

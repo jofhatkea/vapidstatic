@@ -1,0 +1,20 @@
+{
+  "name": "vapidtest",
+  "vapid": {
+    "site": "ff8e0e7e-d517-4e82-801f-153b714dc7d7"
+  },
+  "scripts": {
+    "start": "vapid start .",
+    "static": "node buildStatic.js",
+    "deploy": "npm run static && gh-pages -d static"
+  },
+  "dependencies": {
+    "@vapid/cli": "^0.8.2"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "gh-pages": "^2.0.1",
+    "ncp": "^2.0.0",
+    "request": "^2.88.0"
+  }
+}
