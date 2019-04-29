@@ -11,20 +11,20 @@
       href="https://fonts.googleapis.com/css?family=Monoton|Work+Sans:400,800"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/site.css" />
   </head>
   <body>
     <header class="header">
       <h2>A New Site</h2>
       <h1>
-        <span>Hello, {{vapid label="Greeting"}}</span>
+        <span>Hello, and {{vapid label="Greeting"}}</span>
       </h1>
       <h2>{{ subtitle }}</h2>
       <p><a href="shops.html">Visit our shops</a></p>
 
       <div class="container">
         <p>
-          This template already has few tags—visit the dashboard now to edit
+          This template already has few tags — visit the dashboard now to edit
           their content. And when you're done,
           <a href="https://docs.vapid.com/content-types" target="_blank"
             >add your own content tags</a
@@ -34,7 +34,10 @@
         <p><small>Lastly, submit the contact form below.</small></p>
       </div>
     </header>
-
+    <section>
+      <h1>Who am i?</h1>
+      {{selfie type=image}}
+    </section>
     <section>
       <div class="container">
         <header>
@@ -103,6 +106,6 @@
       </a>
     </footer>
 
-    <script src="/javascripts/site.js"></script>
+    <script src="javascripts/site.js"></script>
   </body>
 </html>
